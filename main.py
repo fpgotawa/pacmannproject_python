@@ -105,31 +105,3 @@ class Transaction:
         except:
             print("Anda belum melakukan pengecekan item. Silakan gunakan check_order() untuk melakukan pengecekan sebelum menghitung total.")
 
-# %%
-trnsct_123 = Transaction()
-
-# %%
-# Test 1
-trnsct_123.add_item("Ayam Goreng", 2, 20000)
-trnsct_123.add_item("Pasta Gigi", 3, 15000)
-
-
-# %%
-# Test 2
-trnsct_123.delete_item("Pasta Gigi")
-
-# %%
-# Test 3
-trnsct_123.reset_transaction()
-
-# %%
-# Test 4
-trnsct_123.add_item("Ayam Goreng", 2, 20000)
-trnsct_123.add_item("Pasta Gigi", 3, 15000)
-trnsct_123.add_item("Mainan Mobil", 1, 200000)
-trnsct_123.add_item("Mi Instan", 5, 3000)
-
-trnsct_123.check_order()
-trnsct_123.total_price()
-
-
